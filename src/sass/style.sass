@@ -2,11 +2,19 @@
     box-sizing: border-box
     font-family: 'Montserrat', sans-serif
 
+.container
+    max-width: 100%
+    margin: 0 165px
+
 .header
-    max-height: 100vh
+    min-height: 100vh
     &__menu
         padding-top: 52px
         padding-bottom: 56px
+
+        display: flex
+        justify-content: space-between
+        align-items: center
         &-logo
             color: #325cfd
             font-size: 32px
@@ -23,13 +31,16 @@
             height: 45px
             border-radius: 23px
             background-color: #325cfd
+            cursor: pointer
     &__content
         display: flex
         justify-content: space-between
         align-items: center
+        flex-wrap: wrap
         &-title
-            width: 29%
-            margin-left: 14%;
+            width: 30%
+            margin-left: 165px
+           
             h1 
                 font-size: 38px
                 font-weight: 700
@@ -40,8 +51,8 @@
                 font-size: 16px
                 font-weight: 400
                 line-height: 20.54px
-                width: 70%
                 padding-top: 35px
+                width: 75%
                 span
                     color: #325cfd
         &-btn
@@ -55,12 +66,16 @@
             background-color: #325cfd
             text-align: center
             border: none
+            cursor: pointer
 
         &-photo
             width: 50%
-            img
-                width: 90%
-                float: right
+            
+            img 
+                width: 100%
+            
+            
+            
 
 .category
     &__title
@@ -68,20 +83,27 @@
         font-size: 27px
         font-weight: 700
         padding-bottom: 50px
-    &__card
-        width: 255px
-        height: 311px
-        text-align: center
-        padding: 50px
-        transition: .3s
-        border-radius: 30px 
-        &:hover
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.25)
-            border: none
-        &-title
-            padding-top: 40px 
-            font-size: 16px
-            font-weight: 400    
+    &__items
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        &-card
+            width: 32%
+            height: 311px
+            text-align: center
+            padding: 50px
+            transition: .3s
+            border-radius: 30px 
+            cursor: pointer
+            margin-bottom: 30px
+            &:hover
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.25)
+                border: none
+            p
+                padding-top: 40px 
+                font-size: 16px
+                font-weight: 400
+              
 .services
     padding-top: 140px
     display: flex
@@ -229,3 +251,38 @@
                 padding-left: 20px
                 padding-right: 20px
                 padding-top: 12px
+
+
+@media (max-width: 576px)
+
+    .container
+        margin: 0 15px
+
+    .header 
+        &__menu
+            &-logo 
+                margin: 0 auto
+            &-btn 
+                display: none
+
+        &__content
+            &-title 
+                margin: 0 15px
+                min-width: 345px
+                h1 
+                    font-size: 30px
+                    line-height: 39.27px
+                p 
+                    padding-top: 30px
+                    width: 100%
+                
+            &-photo
+                width: 100%
+                margin-left: 38px
+                margin-top: 45px
+                
+                
+    .category
+            &__items
+                &-card
+                    width: 100%

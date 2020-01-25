@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blammo</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <script src="https://kit.fontawesome.com/cac541dec1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.min.css">
@@ -15,7 +13,7 @@
 <body>
     <section class="header">
         <div class="container">
-            <div class="header__menu d-flex justify-content-between">
+            <div class="header__menu">
                 <img src="img/b.svg" alt="">
                 <div class="header__menu-logo">blammo<span>.</span> </div>
                 <button class="header__menu-btn">Позвоните нам</button>
@@ -33,30 +31,35 @@
                 </div>
             </div>
     </section>
+
     <section class="category">
         <div class="container">
             <div class="category__title">Наши услуги</div>
-            <div class="d-flex justify-content-between flex-wrap">
-                <div class="category__card">
+            <div class="category__items">
+                <div class="category__items-card">
                     <img src="icons/category1.svg" alt=""> 
-                    <div class="category__card-title">Создание продающих сайтов</div>
+                    <p>Создание продающих сайтов</p>
                 </div>
-                <div class="category__card">
+                <div class="category__items-card">
                     <img src="icons/category2.svg" alt=""> 
-                    <div class="category__card-title">Дизайн сайтов</div>
+                    <p>Дизайн сайтов</p>
                 </div>
-                <div class="category__card">
+                <div class="category__items-card">
+                    <img src="icons/category5.svg" alt=""> 
+                    <p>Контекст</p>
+                </div>
+                <div class="category__items-card">
                     <img src="icons/category3.svg" alt=""> 
-                    <div class="category__card-title">Контекст и таргет</div>
+                    <p>Таргет</p>
                 </div>
-                <div class="category__card">
+                <div class="category__items-card">
                     <img src="icons/category4.svg" alt=""> 
-                    <div class="category__card-title">SEO</div>
+                    <p>SEO</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="services">
+    <!-- <section class="services">
         <div class="container d-flex justify-content-between">
             <div class="services__description">
                 <div class="services__description-title">
@@ -128,7 +131,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
 <script src="js/slick.min.js"></script>    
 <script src="js/script.js"></script>
 </body>
