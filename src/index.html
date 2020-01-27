@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blammo</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
-    <script src="https://kit.fontawesome.com/cac541dec1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -19,20 +20,87 @@
                 <button class="header__menu-btn">Позвоните нам</button>
             </div>
         </div>
-            <div class="header__content">
-                <div class="header__content-title">
-                    <h1>Хотите больше <span>лояльных клиентов</span> в ваш бизнес?</h1>
-                    <p> <span>Пройдите короткий тест,<br> </span>
-                        чтобы мы подобрали эффективный канал продвижения вашего бизнеса</p>
-                    <button class="header__content-btn">Пройти тест</button>
-                </div>
-                <div class="header__content-photo">
-                    <img src="img/main-photo.svg" alt="">
-                </div>
-            </div>
     </section>
+    <section class="main">
+        <div class="container pl-0">
+            <div class="main__title col-md-5 pl-0">Хотите больше <span>лояльных клиентов</span> в ваш бизнес?</div>
+            <div class="main__subtitle col-md-3 pl-0">Пройдите короткий тест,
+            чтобы мы подобрали эффективный канал продвижения вашего бизнеса</div>
+            <button class="main__btn">Пройти тест</button>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container pl-0">
+            <div class="title">Наши услуги</div>
+            <div class="services__card">
+                <a href="services_pages.html" class="services__card-item">
+                    <img src="icons/services__site.svg" alt="">
+                    <p>Создание продающих сайтов</p>
+                </a>
+                <a href="" class="services__card-item">
+                    <img src="icons/services__design.svg" alt="">
+                    <p>Дизайн сайтов</p>
+                </a>
+                <a href="" class="services__card-item">
+                    <img src="icons/services__context.svg" alt="">
+                    <p>Контекст</p>
+                </a>
+                <a href="" class="services__card-item">
+                    <img src="icons/services__target.png" alt="">
+                    <p>Таргет</p>
+                </a>
+                <a href="" class="services__card-item">
+                    <img src="icons/services__seo.svg" alt="">
+                    <p>SEO</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="offer">
+        <div class="container">
+            <div class="title col-md-4 pl-0">Вашего бизнеса еще нет в интернете?</div>
+            <div class="offer__descr col-md-4 pl-0">Посмотрите на сравнение, <br> исходящее из нашего личного <br> опыта</div>
+        </div>
+    </section>
+    <section class="us">
+        <div class="container">
+            <div class="title">Кто мы?</div>
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="us__item">
+                    <h1>6<span>.</span> </h1>
+                    <p>специалистов в нашей команде</p>
+                </div>
+                <div class="us__item">
+                    <h1>20+<span>.</span> </h1>
+                    <p>успешных кейсов по упаковке бизнеса</p>
+                </div>
+                <div class="us__item">
+                    <h1>23<span>.</span> </h1>
+                    <p>года - общий стаж наших сотрудников</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="us2">
+        <div class="container">
+            <div class="us2__title">Lorem ipsum dolor</div>
+            <div class="us2__descr col-md-5 pl-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </div>
+        </div>
+    </section>
+    <section class="stages"></section>
+    <section class="request">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <div class="title">Остались вопросы?</div>
+                <div class="request__descr col-md-5 pl-0 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="footer"></section>
 
-    <section class="category">
+    <!-- <section class="category">
         <div class="container">
             <div class="category__title">Наши услуги</div>
             <div class="category__items">
@@ -59,7 +127,7 @@
             </div>
         </div>
     </section>
-    <!-- <section class="services">
+    <section class="services">
         <div class="container d-flex justify-content-between">
             <div class="services__description">
                 <div class="services__description-title">
@@ -74,6 +142,7 @@
             </ul>
         </div>
     </section>
+    
     <section class="we">
         <div class="container">
             <div class="we__title">Кто мы?</div>
@@ -100,6 +169,7 @@
             </div>
         </div>
     </section>
+    
     <section class="packaging">
         <div class="container">
             <div class="packaging__title">Этапы упаковки вашего бизнеса</div>
@@ -129,6 +199,32 @@
                 
                     <button class="feed-form__btn">Отправить</button>
                 </form>
+            </div>
+        </div>
+    </section> 
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__1 col-md-3">
+                    <h1>Blammo<span>.</span> </h1>
+                    <p>Маркетинговая упаковка бизнеса под ключ в Алматы</p>
+                </div>
+                <div class="footer__2 offset-1 col-md-3">
+                    <p>навигация по сайту</p>
+                    <div class="column">
+                        <a href="">Главная</a>
+                        <a href="">Наши услуги</a>
+                        <a href="">Сравнение</a>
+                        <a href="">О нас</a>
+                        <a href="">Упаковка бизнеса</a>
+                        <a href="">Обратная связь</a>
+                    </div>
+                </div>
+                <div class="footer__3 col-md-2">
+                    <p class="footer__3-title">контакты</p>
+                    <div class="footer__3-email">blammo@gmail.com</div>
+                    <div class="footer__3-phone">+7 (701) 999 76 60</div>
+                </div>
             </div>
         </div>
     </section> -->
