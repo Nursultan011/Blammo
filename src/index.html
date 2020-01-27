@@ -93,9 +93,22 @@
         <div class="container d-flex justify-content-between">
             <div>
                 <div class="title">Остались вопросы?</div>
-                <div class="request__descr col-md-5 pl-0 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                <div class="request__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
             </div>
-            
+                <div class="request__form">
+                    <div class="request__form-title">Оставьте заявку и мы обязательно свяжемся с вами!<span>.</span> </div>
+                    <form action="#">
+                        <p>Имя</p>
+                        <input name="name" required placeholder="Ваше имя" type="text" class="name">
+                        <p>E-mail</p>
+                        <input name="email" required placeholder="Ваш E-mail" type="email" class="email">
+                        <p>Телефон</p>
+                        <input name="phone" required placeholder="Ваш телефон" class="phone">
+                        <p>Ваш вопрос</p>
+                        <textarea name="area" cols=”25” rows=”5” wrap=”on” required placeholder="Какой вопрос вас интересует?" class="comment"></textarea>    
+                        <button class="btn">Отправить</button>
+                    </form>
+                </div>
         </div>
     </section>
     <section class="footer">
@@ -123,136 +136,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- <section class="category">
-        <div class="container">
-            <div class="category__title">Наши услуги</div>
-            <div class="category__items">
-                <div class="category__items-card">
-                    <img src="icons/category1.svg" alt=""> 
-                    <p>Создание продающих сайтов</p>
-                </div>
-                <div class="category__items-card">
-                    <img src="icons/category2.svg" alt=""> 
-                    <p>Дизайн сайтов</p>
-                </div>
-                <div class="category__items-card">
-                    <img src="icons/category5.svg" alt=""> 
-                    <p>Контекст</p>
-                </div>
-                <div class="category__items-card">
-                    <img src="icons/category3.svg" alt=""> 
-                    <p>Таргет</p>
-                </div>
-                <div class="category__items-card">
-                    <img src="icons/category4.svg" alt=""> 
-                    <p>SEO</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container d-flex justify-content-between">
-            <div class="services__description">
-                <div class="services__description-title">
-                    <h1 class="col-md-7">Вашего бизнеса еще нет в интернете?</h1>
-                    <p class="col-md-6">Посмотрите на сравнение, исходящее из нашего личного опыта</p>
-                </div>
-                <img src="img/services-photo.svg" alt="">
-            </div>
-            <ul class="">
-                <li class="services__online"></li>
-                <li class="services__offline"></li>
-            </ul>
-        </div>
-    </section>
-    
-    <section class="we">
-        <div class="container">
-            <div class="we__title">Кто мы?</div>
-            <div class="d-flex justify-content-between flex-wrap">
-                <div class="we__card">
-                    <h1>6<span>.</span> </h1>
-                    <p>специалистов в нашей команде</p>
-                </div>
-                <div class="we__card">
-                    <h1>20+<span>.</span> </h1>
-                    <p>успешных кейсов по упаковке бизнеса</p>
-                </div>
-                <div class="we__card">
-                    <h1>23<span>.</span> </h1>
-                    <p>года - общий стаж наших сотрудников</p>
-                </div>
-            </div>
-            <div class="we__description d-flex justify-content-between">
-                <div class="we__description-txt">
-                    <div class="we__description-txt_title">Lorem ipsum dolor</div>
-                    <p class="col-md-9 pl-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <img src="img/we-photo.svg" alt="">
-            </div>
-        </div>
-    </section>
-    
-    <section class="packaging">
-        <div class="container">
-            <div class="packaging__title">Этапы упаковки вашего бизнеса</div>
-        </div>
-    </section>
-    <section class="form">
-        <div class="container d-flex justify-content-between">
-            <div class="form__description">
-                <div class="form__description-title col-md-7 pl-0">
-                    <h1 class="">Остались вопросы?</h1>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <img src="img/services-photo.svg" alt="">
-            </div>
-            <div class="form__request">
-                <div class="form__request-title">Оставьте заявку и мы обязательно свяжемся с вами!<span>.</span> </div>
-                <form class="feed-form" action="#">
-                    <p>Имя</p>
-                    <input name="name" required placeholder="Ваше имя" type="text" class="feed-form__name">
-                    <p>E-mail</p>
-                    <input name="email" required placeholder="Ваш E-mail" type="email" class="feed-form__email">
-                    <p>Телефон</p>
-                    <input name="phone" required placeholder="Ваш телефон" class="feed-form__phone">
-                    <p>Ваш вопрос</p>
-                    <textarea name="area" cols=”25” rows=”5” wrap=”on” required placeholder="Какой вопрос вас интересует?" class="feed-form__comment"></textarea>
-                    
-                
-                    <button class="feed-form__btn">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </section> 
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer__1 col-md-3">
-                    <h1>Blammo<span>.</span> </h1>
-                    <p>Маркетинговая упаковка бизнеса под ключ в Алматы</p>
-                </div>
-                <div class="footer__2 offset-1 col-md-3">
-                    <p>навигация по сайту</p>
-                    <div class="column">
-                        <a href="">Главная</a>
-                        <a href="">Наши услуги</a>
-                        <a href="">Сравнение</a>
-                        <a href="">О нас</a>
-                        <a href="">Упаковка бизнеса</a>
-                        <a href="">Обратная связь</a>
-                    </div>
-                </div>
-                <div class="footer__3 col-md-2">
-                    <p class="footer__3-title">контакты</p>
-                    <div class="footer__3-email">blammo@gmail.com</div>
-                    <div class="footer__3-phone">+7 (701) 999 76 60</div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    </section>   
 <script src="js/slick.min.js"></script>    
 <script src="js/script.js"></script>
 </body>
