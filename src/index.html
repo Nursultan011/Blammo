@@ -23,10 +23,12 @@
     </section>
     <section class="main">
         <div class="container">
-            <h1 class="main__title col-md-5">Хотите больше <span>лояльных клиентов</span> в ваш бизнес?</h1>
-            <h2 class="main__subtitle col-md-4"> <span>Пройдите короткий тест,</span> <br>
-            чтобы мы подобрали эффективный <br> канал продвижения вашего бизнеса</h2>
-            <button class="main__btn">Пройти тест</button>
+            <div>
+                <h1 class="main__title col-md-5">Хотите больше <span>лояльных клиентов</span> в ваш бизнес?</h1>
+                <h2 class="main__subtitle col-md-4"> <span>Пройдите короткий тест,</span> <br>
+                чтобы мы подобрали эффективный <br> канал продвижения вашего бизнеса</h2>
+                <button class="main__btn">Пройти тест</button>
+            </div>
         </div>
     </section>
     <section class="services">
@@ -70,11 +72,13 @@
                 <div class="col-md-4 offset-2">
                     <div class="offer__content">
                         <div class="row">
-                            <div class="col-md-6 col-sm-6 offer__content_btn">
-                                <a href="javascript:void(0)" class="active business_online">Бизнес в online</a>
-                            </div>
-                            <div class="col-md-6 col-sm-6 offer__content_btn">
-                                <a href="javascript:void(0)" class="business_offline">Бизнес в offline</a>
+                            <div class="d-flex">
+                                <div class="col-md-7 col-sm-7 offer__content_btn">
+                                    <a href="javascript:void(0)" class="active business_online">Бизнес в online</a>
+                                </div>
+                                <div class="col-md-7 col-sm-7 offer__content_btn">
+                                    <a href="javascript:void(0)" class="business_offline">Бизнес в offline</a>
+                                </div>
                             </div>
                             <div class="col-md-12 col-sm-12">
                                 <div class="offer__content_text business_online">
@@ -164,24 +168,28 @@
         </div>
     </section>
     <section class="request">
-        <div class="container d-flex justify-content-between">
-            <div>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-5">
                 <h1 class="title">Остались вопросы?</h1>
                 <div class="request__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
             </div>
-                <div class="request__form">
-                    <div class="request__form-title">Оставьте заявку, и мы обязательно свяжемся с вами!<span>.</span> </div>
-                    <form action="#">
-                        <p>Имя</p>
-                        <input name="name" required placeholder="Ваше имя" type="text" class="name">
-                        <p>E-mail</p>
-                        <input name="email" required placeholder="Ваш E-mail" type="email" class="email">
-                        <p>Телефон</p>
-                        <input name="phone" required placeholder="Ваш телефон" class="phone">
-                        <p>Ваш вопрос</p>
-                        <textarea name="area" cols=”25” rows=”5” wrap=”on” required placeholder="Какой вопрос вас интересует?" class="comment"></textarea>    
-                        <button class="btn">Отправить</button>
-                    </form>
+                <div class="col-md-6 offset-1">
+                    <div class="request__form">
+                        <div class="request__form-title">Оставьте заявку, и мы обязательно свяжемся с вами!<span>.</span> </div>
+                        <form action="#">
+                            <p>Имя</p>
+                            <input name="name" required placeholder="Ваше имя" type="text" class="name">
+                            <p>E-mail</p>
+                            <input name="email" required placeholder="Ваш E-mail" type="email" class="email">
+                            <p>Телефон</p>
+                            <input name="phone" required placeholder="Ваш телефон" class="phone">
+                            <p>Ваш вопрос</p>
+                            <textarea name="area" cols=”25” rows=”5” wrap=”on” required placeholder="Какой вопрос вас интересует?" class="comment"></textarea>    
+                            <button class="btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
                 </div>
         </div>
     </section>
