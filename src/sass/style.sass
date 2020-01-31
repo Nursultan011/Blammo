@@ -15,6 +15,9 @@ body
     font-weight: 700
     padding-left: 0
 
+.container-fluid
+    // margin-left: 200px
+
 .header
     &__menu
         margin-top: 40px
@@ -40,18 +43,18 @@ body
             cursor: pointer
 
 .main
-    padding-top: 170px
     min-height: 98vh
-    background: url('../img/main-photo.svg') right no-repeat
-    margin-bottom: 70px
-    &__title
+    margin-bottom: 70px     
+    &__content
+        padding-top: 170px
+    h1
         font-size: 39px
         font-weight: 700
         line-height: 49.74px
         padding-left: 0
         span
             color: #325cfd
-    &__subtitle
+    h2
         font-size: 16px
         font-weight: 400
         line-height: 20.54px
@@ -59,7 +62,7 @@ body
         padding-left: 0
         span
             color: #325cfd
-    &__btn
+    button
         margin-top: 25px
         color: #ffffff
         font-size: 16px
@@ -70,6 +73,12 @@ body
         text-align: center
         border: none
         cursor: pointer
+    &__bg
+        background: url('../img/main-photo.svg') right no-repeat
+        min-height: 88vh
+        padding: 0
+        margin: 0
+        
 
 .services
     margin: 100px 0
@@ -100,7 +109,7 @@ body
     margin: 100px 0
     background: url('../img/offer__background.svg') no-repeat
     background-position: left bottom
-    padding-bottom: 200px
+    padding-bottom: 180px
     &__descr
         color: #1b1a27
         font-size: 18px
@@ -131,6 +140,8 @@ body
             ul.active
                 display: block 
                 transition: all .1s ease
+                div
+                    margin-bottom: 10px
                 li
                     list-style-type: none
                     padding-left: 15px
@@ -172,17 +183,19 @@ body
             padding: 0 73px
 
 .about_us2
-    background: url('../img/us__background.svg') right no-repeat
-    &__title
-        color: #325cfd
-        font-size: 18px
-        font-weight: 700
-        padding-top: 125px
-        padding-left: 0
-    &__descr
-        padding-top: 20px
-        padding-bottom: 127px
-        padding-left: 0
+    &__content
+        h1
+            color: #325cfd
+            font-size: 18px
+            font-weight: 700
+            padding-top: 125px
+            padding-left: 0
+        p
+            padding-top: 20px
+            padding-bottom: 127px
+            padding-left: 0
+    &__bg
+        background: url('../img/us__background.svg') right no-repeat
 
 .stages
     margin: 100px 0

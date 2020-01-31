@@ -7,16 +7,29 @@
                 display: none
     .main
         background-size: 10%
-        &__title
-            width: 100%
-        &__img
-            width: 100%
+        &__content
+            padding-top: 0 !important
+        &__bg
+            background-size: contain !important
+            min-height: 60vh !important
+    .main2
+        background-size: 10%
+        &__content
+            padding-top: 0 !important
+        &__bg
+            background-size: contain !important
+            min-height: 40vh !important
+
     .offer
     .about_us
         padding-bottom: 0
     .about_us2
-        &__title
+        background-size: 10%
+        h1
             padding-top: 0px
+        &__bg
+            background-size: contain !important
+            min-height: 30vh !important
     .request
         padding-bottom: 200px
         background-size: 100% !important
@@ -35,5 +48,11 @@
 
 @media screen and ( min-width: 1920px )
     .main
-        &__title
-            padding-top: 180px
+        h1
+            padding-top: 170px
+
+@media screen and ( min-width: 1000px )
+    .container-fluid
+        padding-left: 200px
+    
+    
