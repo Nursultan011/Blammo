@@ -17,7 +17,3 @@ $(document).ready(function(){
         $('#stage_' + stage_id).addClass('active');
     });
 });
-
-
-
-
