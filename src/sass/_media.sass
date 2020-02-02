@@ -9,6 +9,7 @@
         background-size: 10%
         &__content
             padding-top: 0 !important
+            margin-bottom: 45px
         &__bg
             background-size: contain !important
             min-height: 50vh !important
@@ -18,11 +19,19 @@
         background-size: 10%
         &__content
             padding-top: 0 !important
+            margin-bottom: 45px
         &__bg
             background-size: contain !important
             min-height: 40vh !important
+            width: 90%
+            margin-left: 40px !important
     .offer
-    
+        background-size: 41vh !important
+        &__content
+            margin-top: 50px
+            margin-bottom: 40px
+        .offset-2
+            margin-left: 0
     .about_us
         padding-bottom: 0
     .about_us2
@@ -37,10 +46,8 @@
             width: 90%
             margin-left: 40px !important
     .request
-        width: 100%
-        background-size: 10% !important 
+        background-size: 41vh !important 
         padding-bottom: 250px !important
-        background-size: 100% !important
         &__descr
             padding-bottom: 30px
         &__form_btn
@@ -68,9 +75,20 @@
         h1
             padding-top: 100px
 
-@media screen and ( min-width: 1000px )
+@media screen and ( width: 1024px )
     .container-fluid
-        padding-left: 200px
+        padding-left: 50px !important
+
+@media screen and ( min-width: 1500px )
+    .container-fluid
+        padding-left: 200px !important
+
+@media screen and ( width: 1440px )
+    .container-fluid
+        padding-left: 165px 
+    .main
+        &__bg
+            background-size: 90vh !important 
 
 @media screen and ( min-width: 2880px )
     .container-fluid
