@@ -16,9 +16,8 @@ body
     padding-left: 0
 
 
-
-.header
-    &__menu-burger
+.active__header
+    .active__menu
         // display: none
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.25)
         background-color: #325cfd
@@ -30,13 +29,16 @@ body
             a
                 color: #ffffff
                 font-size: 16px
-                font-weight: 400
+                font-weight: 500
                 text-decoration: none
                 margin-right: 40px
+                &:hover
+                    text-decoration: none 
                 &:last-child
                     margin-right: 0
         .a2
             margin-top: 54px
+.header
     &__menu
         // display: none
         margin-top: 40px

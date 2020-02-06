@@ -5,6 +5,16 @@
                 margin: 0 auto
             &-btn
                 display: none
+    .active__header
+        .active__menu
+            min-height: 100vh !important
+            div
+                flex-direction: column
+                align-items: center
+            a
+                margin-bottom: 40px
+                margin-right: 0 !important
+                font-size: 18px !important
     .main
         background-size: 50vh !important
         padding-top: 0 !important
@@ -85,6 +95,15 @@
         &__3
             margin-top: 50px
 
+///////////////////////////////////////////////////////////////////////////
+
+@media screen and ( width: 320px )
+    .offer__content_btn
+        .business_offline
+            margin-left: 25px !important
+
+///////////////////////////////////////////////////////////////////////////          
+
 @media screen and ( height: 812px )
     .main
         background-size: 41vh !important
@@ -97,6 +116,89 @@
     .request
         background-size: 41vh !important
 
+///////////////////////////////////////////////////////////////////////////
+
+@media screen and ( width: 768px )
+    .main
+        background-size: 45vh !important
+        min-height: 500px !important 
+        padding-top: 50px !important 
+        h1
+            font-size: 33px !important
+    .main2
+        background-size: 40vh !important
+        min-height: 300px !important
+    .catalog__card-item
+        width: 300px !important
+        &_price
+            padding-left: 170px !important
+    .services
+        &__card
+            &-item
+                width: 200px !important
+    .offer
+        background-size: 35vh !important
+        min-height: 300px !important
+        &__content
+            &_btn
+                .business_offline
+                    margin-left: 0 !important 
+    .about_us
+        &__item
+            width: 400px !important
+            margin: 0 auto
+    .about_us2
+        background-size: 40vh !important
+        min-height: 100px !important
+    .stages__content_text
+        img
+            margin-top: 100px !important
+    .request
+        background-size: 35vh !important
+    .footer__3-email
+        padding-top: 25px !important
+    .active__header .active__menu
+        div
+            a
+                margin-right: 20px !important
+///////////////////////////////////////////////////////////////////////////
+
+@media screen and ( width: 1024px )
+    .main
+        background-size: 45vh !important
+        min-height: 550px !important
+        background-position-y: 0px !important
+        padding-top: 110px !important
+    .main2
+        min-height: 450px !important
+    .catalog__card-item
+        width: 450px !important
+    .services
+        &__card
+            &-item
+                width: 300px !important
+    .offer
+        min-height: 580px !important
+        background-size: 35vh !important
+        &__content
+            &_btn
+                .business_offline
+                    margin-left: 40px !important
+    .about_us
+        &__item
+            width: 300px !important
+    .about_us2
+        background-size: 40vh !important
+    .stages
+        &__content
+            &_text
+                img
+                    margin-top: 40px !important
+    .request
+        background-size: 35vh !important
+    
+///////////////////////////////////////////////////////////////////////////
+
 @media screen and ( min-width: 1920px )
     .main
         h1
@@ -104,7 +206,3 @@
     .main2
         h1
             padding-top: 100px
-
-
-        
-    
