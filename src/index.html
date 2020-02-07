@@ -9,11 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="active__header"> 
+    <section class="active__header">
         <div class="active__menu">
             <div class="a1">
                 <a href="">Главная</a>
@@ -27,15 +26,16 @@
                 <a href=""> <img src="icons/phone.svg" alt="phone"> +7 (701) 999 76 60 </a>
                 <a href=""> <img src="icons/mail.svg" alt="email"> blommo@gmail.com </a>
             </div>
+            <div class="close-btn">
+                <a href="javascript:void(0)">X</a>
+            </div>
         </div>
     </section>
-    <section class="header"> 
+    <section class="header">
         <div class="container">
             <div class="header__menu">
                 <div class="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+                    <img src="img/icon/navigation/hamburger.svg" alt="hamburger">
                 </div>
                 <a href=""> <img src="icons/blammo..svg" alt="blammo_logo"> </a>
                 <button class="header__menu-btn">Позвоните нам</button>
@@ -44,11 +44,10 @@
     </section>
     <section class="main">
         <div class="container">
-
             <h1 class="col-md-5">Хотите больше <span>лояльных клиентов</span> в ваш бизнес?</h1>
             <h2 class="col-md-4"> <span>Пройдите короткий тест,</span> <br>
             чтобы мы подобрали эффективный <br> канал продвижения вашего бизнеса</h2>
-            <button>Пройти тест</button>
+            <button>Оставить заявку</button>
         </div>
     </section>
     <section class="services">
@@ -58,26 +57,32 @@
                 <a href="services_pages.html" class="services__card-item">
                     <img src="icons/services__site.svg" alt="site__icon">
                     <p>Создание продающих сайтов</p>
+                    <button>Подробнее</button>
                 </a>
                 <a href="" class="services__card-item">
                     <img src="icons/services__design.svg" alt="design__icon">
                     <p>Дизайн сайтов</p>
+                    <button>Подробнее</button>
                 </a>
                 <a href="" class="services__card-item">
                     <img src="icons/services__context.svg" alt="context__icon">
                     <p>Контекст</p>
+                    <button>Подробнее</button>
                 </a>
                 <a href="" class="services__card-item">
                     <img src="icons/services__target.png" alt="target__icon">
                     <p>Таргет</p>
+                    <button>Подробнее</button>
                 </a>
                 <a href="" class="services__card-item">
                     <img src="icons/services__seo.svg" alt="seo__icon">
                     <p>SEO</p>
+                    <button>Подробнее</button>
                 </a>
                 <a href="services_pages.html" class="services__card-item">
                     <img src="icons/services__site.svg" alt="">
                     <p>Создание продающих сайтов</p>
+                    <button>Подробнее</button>
                 </a>
             </div>
         </div>
@@ -167,7 +172,7 @@
     <section class="about_us">
         <div class="container">
             <h1 class="title">Кто мы?</h1>
-            <div class="d-flex justify-content-between flex-wrap">
+            <div class="about_us__card">
                 <div class="about_us__item">
                     <h1>6<span>.</span> </h1>
                     <p>специалистов в нашей команде</p>
@@ -312,7 +317,7 @@
         </div>
     </section>
     <script src="js/slick.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/script.js"></script>
 </body>
