@@ -47,13 +47,8 @@
         <div class="container">
             <h1 class="col-md-5">Создание <span>продающих сайтов</span></h1>
             <h2 class="col-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
-            <button id="modal-btn">Оставить заявку</button>
-            <!-- <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Modal window</p>
-                </div>
-            </div> -->
+            <button data-modal="consultation">Оставить заявку</button>
+            
         </div>
     </section>
     <section class="catalog">
@@ -124,6 +119,27 @@
             </div>
         </div>
     </section>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+                <div class="modal__close">&times;</div>
+                <div class="modal__title">Оставьте заявку, и мы обязательно свяжемся с вами!<span>.</span> </div>
+                <form action="#">
+                    <p>Имя</p>
+                    <input name="name" required placeholder="Ваше имя" type="text" class="name">
+                    <p>E-mail</p>
+                    <input name="email" required placeholder="Ваш E-mail" type="email" class="email">
+                    <p>Телефон</p>
+                    <input name="phone" required placeholder="Ваш телефон" type="text" class="phone">
+                    <p>Ваш вопрос</p>
+                    <textarea name="area" cols=”25” rows=”5” wrap=”on” required placeholder="Какой вопрос вас интересует?" class="comment"></textarea>
+                    <div class="modal__btn">
+                        <input type="submit" value="Отправить">
+                    </div>
+                </form>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>

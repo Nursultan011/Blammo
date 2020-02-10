@@ -15,7 +15,7 @@
     <section class="active__header">
         <div class="active__menu">
             <div class="a1">
-                <a href="">Главная</a>
+                <a href="footer">Главная</a>
                 <a href="">Наши услуги</a>
                 <a href="">Сравнение</a>
                 <a href="">О нас</a>
@@ -38,16 +38,15 @@
                     <img src="img/icon/navigation/hamburger.svg" alt="hamburger">
                 </div>
                 <a href=""> <img src="icons/blammo..svg" alt="blammo_logo"> </a>
-                <button class="header__menu-btn">Позвоните нам</button>
+                <button class="header__menu-btn" data-modal="consultation">Позвоните нам</button>
             </div>
         </div>
     </section>
     <section class="main">
         <div class="container">
             <h1 class="col-md-5">Хотите больше <span>лояльных клиентов</span> в ваш бизнес?</h1>
-            <h2 class="col-md-4"> <span>Пройдите короткий тест,</span> <br>
-            чтобы мы подобрали эффективный <br> канал продвижения вашего бизнеса</h2>
-            <button>Оставить заявку</button>
+            <h2 class="col-md-4">Упакуем бизнес и привлечем новых клиентов с интернета</h2>
+            <button data-modal="consultation">Оставить заявку</button>
         </div>
     </section>
     <section class="services">
@@ -316,6 +315,25 @@
             </div>
         </div>
     </section>
+    <div class="overlay">
+        <div class="modal" id="consultation">
+                <div class="modal__close">&times;</div>
+                <div class="modal__title">Оставьте заявку, и мы обязательно свяжемся с вами!<span>.</span> </div>
+                <form action="#">
+                    <p>Имя</p>
+                    <input name="name" required placeholder="Ваше имя" type="text" class="name">
+                    <p>E-mail</p>
+                    <input name="email" required placeholder="Ваш E-mail" type="email" class="email">
+                    <p>Телефон</p>
+                    <input name="phone" required placeholder="Ваш телефон" type="text" class="phone">
+                    <p>Ваш вопрос</p>
+                    <textarea name="area" cols=”25” rows=”5” wrap=”on” required placeholder="Какой вопрос вас интересует?" class="comment"></textarea>
+                    <div class="modal__btn">
+                        <input type="submit" value="Отправить">
+                    </div>
+                </form>
+        </div>
+    </div>
     <script src="js/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/TweenMax.min.js"></script>

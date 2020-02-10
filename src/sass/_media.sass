@@ -1,9 +1,10 @@
 @media ( max-width: 600px )
     .header
         &__menu
-            // margin-right: 110px !important
-            &-logo
-                margin: 0 auto
+            justify-content: flex-start !important
+            a
+                img
+                    margin-left: 50% !important
             &-btn
                 display: none
     .active__header
@@ -105,6 +106,12 @@
         &__card
             justify-content: center !important
 
+    .modal
+        width: 345px !important
+        &__btn
+            input[type=submit]
+                width: 65% !important
+
 ///////////////////////////////////////////////////////////////////////////
    
 @media screen and ( width: 320px )
@@ -115,7 +122,23 @@
     .offer__content_btn
         .business_offline
             margin-left: 25px !important
+    .modal
+        width: 300px !important
+        form
+            .name
+                margin-top: 20px !important
+            .email
+                margin-top: 20px !important
+            .phone
+                margin-top: 20px !important
+            .comment
+                margin-top: 20px !important
+            p
+                display: none !important
+    .catalog__card-item_price
+        padding-left: 140px !important
 
+        
 ///////////////////////////////////////////////////////////////////////////          
 
 @media screen and ( height: 812px )
