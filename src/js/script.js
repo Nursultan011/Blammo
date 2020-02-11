@@ -37,9 +37,10 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
     var elemScrollTop = $(window).scrollTop();
-    var blockHeight = $('.header').height() + $('.main').height();
-    if (! $('.active__menu').is(':visible') ) {
-        if (elemScrollTop >= (blockHeight / 2)) {
+    var blockHeight = $('.header').height() + $('.main, .main2').height();
+
+    if (! $('.active__menu').is(':visible')) {
+        if (elemScrollTop >= (blockHeight / 2) ) {
             $('.header').addClass('slick');
         } else {
             $('.header').removeClass('slick');
