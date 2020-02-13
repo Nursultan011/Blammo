@@ -33,6 +33,9 @@ $(document).ready(function(){
     $('.modal__close').on('click', function() {
         $('.overlay, #consultation').fadeOut('slow')
     });
+    $('.close_navbar').on('click', function(){
+        $('.active__menu').fadeOut();
+    });
 });
 
 $(window).scroll(function(){
@@ -54,3 +57,4 @@ $('a').click(function () {
     }, 1500);
     return false;
 });
+
