@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    new WOW().init();
+
     $(".offer__content .offer__content_btn a").click(function(e) {
         e.preventDefault();
         const btnClassName = this.className;
@@ -17,14 +20,10 @@ $(document).ready(function(){
         $('#stage_' + stage_id).addClass('active');
     });
 
-    $(".hamburger").click(function (e) {
-        e.preventDefault();
-        $('.active__menu').fadeIn();
-    });
-
-    $(".close-btn").click(function (e) {
-        e.preventDefault();
-        $('.active__menu').fadeOut();
+    $('.hamburger').on('click', function(e) {
+        e.preventDefault;
+        $(this).toggleClass('hamburger_active');
+        return;
     });
 
     $('[data-modal=consultation]').on('click', function() {
@@ -33,9 +32,7 @@ $(document).ready(function(){
     $('.modal__close').on('click', function() {
         $('.overlay, #consultation').fadeOut('slow')
     });
-    $('.close_navbar').on('click', function(){
-        $('.active__menu').fadeOut();
-    });
+    $('input[name=phone').mask("+7 (999) 999-99-99");
 });
 
 $(window).scroll(function(){
@@ -51,10 +48,4 @@ $(window).scroll(function(){
     }
 });
 
-$('.a1 a').click(function () {
-    $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
-    }, 1500);
-    return false;
-});
 

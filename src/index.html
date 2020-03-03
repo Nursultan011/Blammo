@@ -9,91 +9,76 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="active__header">
-        <div class="active__menu">
-            <div class="a1">
-                <a href="#main" class="close_navbar">Главная</a>
-                <a href="#services" class="close_navbar">Наши услуги</a>
-                <a href="#offer" class="close_navbar">Сравнение</a>
-                <a href="#about" class="close_navbar">О нас</a>
-                <a href="#stages" class="close_navbar">Упаковка бизнеса</a>
-                <a href="#request" class="close_navbar">Обратная связь</a>
-            </div>
-            <div class="a2">
-                <a href="tel:+77019997660"> <img src="icons/phone.svg" alt="phone"> +7 (701) 999 76 60 </a>
-                <a href="mailto:support@blammo.kz"> <img src="icons/mail.svg" alt="email"> blommo@gmail.com </a>
-            </div>
-            <div class="close-btn">
-                <a href="javascript:void(0)">X</a>
-            </div>
-        </div>
-    </section>
-    <section class="header">
+    <header class="header">
         <div class="container">
-            <div class="header__menu">
-                <div class="hamburger">
-                    <img src="img/icon/navigation/hamburger.svg" alt="hamburger">
-                </div>
-                <a href=""> <img src="icons/blammo..svg" alt="blammo_logo"> </a>
-                <button class="header__menu-btn" data-modal="consultation">Позвоните нам</button>
+            <a href="" class="header__logo"> <img src="icons/blammo..svg" alt="blammo_logo"> </a>
+            <div class="humberger">
+                <span></span>
             </div>
         </div>
-    </section>
+    </header>
     <section class="main" id="main">
         <div class="container">
-            <h1 class="col-md-5">Хотите больше <span>лояльных клиентов</span> в ваш бизнес?</h1>
-            <h2 class="col-md-4">Упакуем бизнес и привлечем новых клиентов с интернета</h2>
+            <h1 class="col-md-9">Хотите больше лояльных клиентов <br> в ваш бизнес?</h1>
+            <h2 class="col-md-4">Упакуем бизнес и привлечем новых <br> клиентов с интернета</h2>
             <button data-modal="consultation">Оставить заявку</button>
         </div>
     </section>
     <section class="services" id="services">
         <div class="container">
             <h1 class="title">Наши услуги</h1>
-            <div class="services__card">
-                <a href="services_pages.html" class="services__card-item">
-                    <img src="icons/services__site.svg" alt="site__icon">
-                    <p>Создание продающих сайтов</p>
-                    <button>Подробнее</button>
-                </a>
-                <a href="" class="services__card-item">
-                    <img src="icons/services__design.svg" alt="design__icon">
+            <div class="services__content fadeInUp wow">
+               <a href="services_pages.html" class="services__content-item bg1">
+                    <div>
+                        <p class="col-md-9 p">Создание продающих сайтов</p>
+                        <img src="icons/services_s.svg" alt="">
+                    </div>
+               </a>
+               <a href="" class="services__content-item bg2">
+                <div>
                     <p>Дизайн сайтов</p>
-                    <button>Подробнее</button>
-                </a>
-                <a href="" class="services__card-item">
-                    <img src="icons/services__context.svg" alt="context__icon">
+                    <img src="icons/services_s.svg" alt="">
+                </div>
+               </a>
+               <a href="" class="services__content-item bg3">
+                <div>
                     <p>Контекст</p>
-                    <button>Подробнее</button>
-                </a>
-                <a href="" class="services__card-item">
-                    <img src="icons/services__target.png" alt="target__icon">
+                    <img src="icons/services_s.svg" alt="">
+                </div>
+               </a>
+               <a href="" class="services__content-item bg4">
+                <div>
                     <p>Таргет</p>
-                    <button>Подробнее</button>
-                </a>
-                <a href="" class="services__card-item">
-                    <img src="icons/services__seo.svg" alt="seo__icon">
-                    <p>SEO</p>
-                    <button>Подробнее</button>
-                </a>
-                <a href="services_pages.html" class="services__card-item">
-                    <img src="icons/services__site.svg" alt="">
-                    <p>Создание продающих сайтов</p>
-                    <button>Подробнее</button>
-                </a>
+                    <img src="icons/services_s.svg" alt="">
+                </div>
+               </a>
+               <a href="" class="services__content-item bg5">
+                   <div>
+                       <p>SEO</p>
+                       <img src="icons/services_s.svg" alt="">
+                   </div>
+               </a>
+               <a href="" class="services__content-item bg6">
+                   <div>
+                       <p class="col-md-6 p">Техническая поддержка</p>
+                       <img src="icons/services_s.svg" alt="">
+                   </div>
+               </a> 
             </div>
         </div>
     </section>
     <section class="offer" id="offer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h1 class="title">Вашего бизнеса еще нет в интернете?</h1>
-                    <h2 class="offer__descr">Посмотрите на сравнение, <br> исходящее из нашего личного <br> опыта</h2>
+                <div class="offer__text col-md-5 fadeInUp wow">
+                    <h1 class="offer__text-title">Вашего бизнеса еще нет в интернете?</h1>
+                    <h4 class="offer__text-subtitle">Посмотрите на сравнение, <br> исходящее из нашего личного <br> опыта</h4>
                 </div>
-                <div class="col-md-4 offset-2">
+                <div class="col-md-4 offset-md-1 col-sm-12 fadeInUp wow">
                     <div class="offer__content">
                         <div class="row">
                             <div class="d-flex">
@@ -134,7 +119,7 @@
                                     </ul>
                                 </div>
                                 <div class="offer__content_text business_offline">
-                                    <ul>
+                                    <ul class="ul_offline">
                                         <div class="d-flex">
                                             <img src="img/offlinee.svg" alt="">
                                             <li>Клиенты не смогут найти вас в интернете</li>
@@ -171,7 +156,7 @@
     <section class="about_us" id="about">
         <div class="container">
             <h1 class="title">Кто мы?</h1>
-            <div class="about_us__card">
+            <div class="about_us__card fadeInUp wow">
                 <div class="about_us__item">
                     <h1>6<span>.</span> </h1>
                     <p>специалистов в нашей команде</p>
@@ -189,16 +174,20 @@
     </section>
     <section class="about_us2">
         <div class="container">
-            <div class="about_us2__content">
-                <h1 class="">Lorem ipsum dolor</h1>
-                <p class="col-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="about_us2__content fadeInUp wow">
+                <div class="about_us2__content-description col-md-5">
+                    <h1>Lorem ipsum dolor</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <div class="about_us2__content-bg col-md-7"></div>
             </div>
         </div>
     </section>
     <section class="stages" id="stages">
         <div class="container">
             <h1 class="title">Этапы упаковки вашего бизнеса</h1>
-            <div class="stages__content">
+            <div class="stages__content fadeInUp wow">
                 <div class="row d-flex justify-content-between">
                     <div class="col-md-5 col-sm-12">
                         <ul>
@@ -227,27 +216,21 @@
                     </div>
                     <div class="col-md-5 col-sm-12 stages__content_block">
                         <div class="active stages__content_text" id="stage_1">
-                            <img src="img/stages1.svg" alt="stage">
                             <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="stages__content_text" id="stage_2">
-                            <img src="img/stages2.svg" alt="stage">
                             <p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="stages__content_text" id="stage_3">
-                            <img src="img/stages3.svg" alt="stage">
                             <p>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="stages__content_text" id="stage_4">
-                            <img src="img/stages4.svg" alt="stage">
                             <p>4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="stages__content_text" id="stage_5">
-                            <img src="img/stages5.svg" alt="stage">
                             <p>5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="stages__content_text" id="stage_6">
-                            <img src="img/stages6.svg" alt="stage">
                             <p>6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="stages__content_text" id="stage_7">
@@ -262,20 +245,16 @@
     <section class="request" id="request">
         <div class="container">
             <div class="row">
-            <div class="col-md-5">
-                <h1 class="title">Остались вопросы?</h1>
-                <div class="request__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-            </div>
-                <div class="col-md-6 offset-1 request__form-content">
-                    <div class="request__form">
+                <div class="offset-md-6 col-md-6 request__form-content">
+                    <div class="request__form fadeInUp wow">
                         <div class="request__form-title">Оставьте заявку, и мы обязательно свяжемся с вами!<span>.</span> </div>
                         <form action="#">
                             <p>Имя</p>
                             <input name="name" required placeholder="Ваше имя" type="text" class="name">
                             <p>E-mail</p>
-                            <input name="email" required placeholder="Ваш E-mail" type="email" class="email">
+                            <input name="email" required placeholder="blommo@gmail.com" type="email" class="email">
                             <p>Телефон</p>
-                            <input name="phone" required placeholder="Ваш телефон" type="text" class="phone">
+                            <input name="phone" required placeholder="+7 (701) 999 76 60" type="text" class="phone">
                             <p>Ваш вопрос</p>
                             <textarea name="area" cols=”25” rows=”5” wrap=”on” required placeholder="Какой вопрос вас интересует?" class="comment"></textarea>
                             <div class="request__form_btn">
@@ -294,7 +273,7 @@
                     <a href=""> <img src="icons/blammo-logo-footer.svg" alt="blammo_logo"> </a>
                     <p>Маркетинговая упаковка бизнеса под ключ в Алматы</p>
                 </div>
-                <div class="footer__2 offset-1 col-md-3">
+                <div class="footer__2 offset-md-1 col-md-3">
                     <p>навигация по сайту</p>
                     <div class="a1">
                         <a href="#main">Главная</a>
@@ -335,6 +314,8 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

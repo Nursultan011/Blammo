@@ -1,255 +1,227 @@
 @media ( max-width: 600px )
     .header
-        &__menu
-            justify-content: flex-start !important
-            margin-top: 25px !important
-            a
-                img
-                    margin-left: 50% !important
-            &-btn
-                display: none
-    .active__header
-        .active__menu
-            min-height: 100vh !important
-            div
-                flex-direction: column
-                align-items: center
-            a
-                margin-bottom: 40px
-                margin-right: 0 !important
-                font-size: 18px !important
-    .slick
-        height: 80px !important
+        padding: 29px 0 !important
+
     .main
-        background-size: 50vh !important
-        padding-top: 0 !important
-        min-height: 680px !important
-        margin-bottom: 0 !important
-        background-position-y: 350px !important
+        padding: 195px 0 !important
         h1
-            font-size: 30px !important
-            line-height: 40px !important
+            font-size: 29px !important
         h2
-            padding-top: 30px !important
+            font-size: 16px !important
+
     .main2
-        background-size: 50vh !important
-        margin-bottom: 0 !important
-        padding-top: 0 !important
-        min-height: 640px !important
-        background-position-y: 390px !important
-        h2
-            padding-top: 30px !important
-    .services
-        &__card
-            justify-content: center !important
-    .offer
-        background-size: 50vh !important
-        min-height: 930px !important
-        &__content
-            margin-top: 50px
-            margin-bottom: 40px
-            &_btn
-                .business_online
-                    margin-left: 15px
-            &_text
-                padding: 0 15px !important
-        .offset-2
-            margin-left: 0
-    .about_us
-        padding-bottom: 0
-        margin: 60px 0 !important
-        &__card
-            justify-content: center !important
-    .about_us2
-        background-size: 50vh !important
-        min-height: 460px !important
-        background-position-y: 250px !important
+        background-position-x: -400px !important
         h1
-            padding-top: 0px !important
-        p
-            padding-bottom: 30px !important
+            font-size: 29px !important
+
+    .services
+        margin-top: 150px !important
+        &__content
+            justify-content: center !important
+
+    .offer
+        margin-top: 150px !important
+        &__text
+            margin: 0 15px !important
+            padding: 40px 20px !important
+            background-size: 100% !important
+            min-height: 60vh !important
+            &-title
+                font-size: 25px !important
+            &-subtitle
+                margin-top: 20px !important
+        &__content
+            padding: 0 25px 0 15px !important
+    
+    .about_us
+        &__card
+            justify-content: center !important
+
+    .about_us2__content
+        &-description
+            margin: 0 !important
+            margin-bottom: 50px !important
+        &-bg
+            min-height: 38vh !important
+
     .stages
+        margin-top: 150px !important
         &__content
             &_text
                 margin-top: 50px !important 
                 p
                     margin-top: 30px !important
             ul
-                display: flex
-                flex-direction: row
-                width: auto
-                overflow: scroll;
+                display: flex !important
+                flex-direction: row !important
+                width: auto !important
+                overflow: scroll !important
                 padding: 0 !important
                 li
-                    min-width: 80vw
+                    min-width: 80vw !important
                     &.active, &:hover
                         border-left: 0 !important
-    .request
-        background-size: 50vh !important 
-        padding-bottom: 250px !important
-        &__descr
-            padding-bottom: 30px
-        &__form_btn
-            input[type=submit]
-                width: 70% !important
-        &__form-content
-            margin-left: 0
+
+    .request__form_btn 
+        input[type=submit]
+            width: 70% !important
 
     .footer
         &__1
-            margin-bottom: 50px
-            p
-                padding-right: 87px
+            margin-bottom: 50px !important
         &__2
-            margin: 0
-        &__3
-            margin-top: 50px
+            margin-bottom: 50px !important
+//     .main2
+//         background-size: 50vh !important
+//         margin-bottom: 0 !important
+//         padding-top: 0 !important
+//         min-height: 640px !important
+//         background-position-y: 390px !important
+//         h2
+//             padding-top: 30px !important
+//     .services
+//         &__card
+//             justify-content: center !important
+//     .offer
+//         background-size: 50vh !important
+//         min-height: 930px !important
+//         &__content
+//             margin-top: 50px
+//             margin-bottom: 40px
+//             &_btn
+//                 .business_online
+//                     margin-left: 15px
+//             &_text
+//                 padding: 0 15px !important
+//         .offset-2
+//             margin-left: 0
+//     .about_us2
+//         background-size: 50vh !important
+//         min-height: 460px !important
+//         background-position-y: 250px !important
+//         h1
+//             padding-top: 0px !important
+//         p
+//             padding-bottom: 30px !important
+     
 
-    .catalog
-        &__card
-            justify-content: center !important
+//     .catalog
+//         &__card
+//             justify-content: center !important
 
-    .modal
-        width: 345px !important
-        &__btn
-            input[type=submit]
-                width: 65% !important
+//     .modal
+//         width: 345px !important
+//         &__btn
+//             input[type=submit]
+//                 width: 65% !important
 
-///////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////////
    
-@media screen and ( width: 320px )
-    .header
-        &__menu
-            a
-                img
-                    margin-left: 35% !important
-    .offer
-        // min-height: 100vh !important
-        background-position-y: 145vh !important
-        min-height: 1000px !important
+@media screen and ( max-width: 320px )
     .offer__content_btn
         .business_offline
-            margin-left: 25px !important
-    .modal
-        width: 300px !important
-        form
-            .name
-                margin-top: 20px !important
-            .email
-                margin-top: 20px !important
-            .phone
-                margin-top: 20px !important
-            .comment
-                margin-top: 20px !important
-            p
-                display: none !important
-    .catalog__card-item_price
-        padding-left: 140px !important
+            margin-left: 9px !important
+//     .offer
+//         // min-height: 100vh !important
+//         background-position-y: 145vh !important
+//         min-height: 1000px !important
+//     .offer__content_btn
+//         .business_offline
+//             margin-left: 25px !important
+//     .modal
+//         width: 300px !important
+//         form
+//             .name
+//                 margin-top: 20px !important
+//             .email
+//                 margin-top: 20px !important
+//             .phone
+//                 margin-top: 20px !important
+//             .comment
+//                 margin-top: 20px !important
+//             p
+//                 display: none !important
+//     .catalog__card-item_price
+//         padding-left: 140px !important
 
         
-///////////////////////////////////////////////////////////////////////////          
+// ///////////////////////////////////////////////////////////////////////////          
 
-@media screen and ( height: 812px )
-    .main
-        background-size: 41vh !important
-    .main2
-        background-size: 41vh !important
-    .offer
-        background-size: 41vh !important
-    .about_us2
-        background-size: 41vh !important
-    .request
-        background-size: 41vh !important
+// ///////////////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////////
+// @media screen and ( width: 768px )
+//     .main
+//         background-size: 45vh !important
+//         min-height: 500px !important 
+//         padding-top: 50px !important 
+//         h1
+//             font-size: 33px !important
+//     .main2
+//         background-size: 40vh !important
+//         min-height: 300px !important
+//     .catalog__card-item
+//         width: 300px !important
+//         &_price
+//             padding-left: 170px !important
+//     .services
+//         &__card
+//             &-item
+//                 margin: 0 auto !important
+//     .offer
+//         background-size: 35vh !important
+//         min-height: 300px !important
+//         &__content
+//             &_btn
+//                 .business_offline
+//                     margin-left: 0 !important 
+//     .about_us
+//         &__item
+//             width: 400px !important
+//             margin: 0 auto
+//     .about_us2
+//         background-size: 40vh !important
+//         min-height: 100px !important
+//     .stages__content_text
+//         img
+//             margin-top: 100px !important
+//     .request
+//         background-size: 35vh !important
+//     .footer__3-email
+//         padding-top: 25px !important
+//     .active__header .active__menu
+//         div
+//             a
+//                 margin-right: 20px !important
+// ///////////////////////////////////////////////////////////////////////////
 
-@media screen and ( width: 768px )
-    .main
-        background-size: 45vh !important
-        min-height: 500px !important 
-        padding-top: 50px !important 
-        h1
-            font-size: 33px !important
-    .main2
-        background-size: 40vh !important
-        min-height: 300px !important
-    .catalog__card-item
-        width: 300px !important
-        &_price
-            padding-left: 170px !important
-    .services
-        &__card
-            &-item
-                margin: 0 auto !important
-    .offer
-        background-size: 35vh !important
-        min-height: 300px !important
-        &__content
-            &_btn
-                .business_offline
-                    margin-left: 0 !important 
-    .about_us
-        &__item
-            width: 400px !important
-            margin: 0 auto
-    .about_us2
-        background-size: 40vh !important
-        min-height: 100px !important
-    .stages__content_text
-        img
-            margin-top: 100px !important
-    .request
-        background-size: 35vh !important
-    .footer__3-email
-        padding-top: 25px !important
-    .active__header .active__menu
-        div
-            a
-                margin-right: 20px !important
-///////////////////////////////////////////////////////////////////////////
+// @media screen and ( width: 1024px )
 
-@media screen and ( width: 1024px )
-    .main
-        background-size: 45vh !important
-        min-height: 550px !important
-        background-position-y: 0px !important
-        padding-top: 110px !important
-    .main2
-        min-height: 450px !important
-    .catalog__card-item
-        width: 450px !important
-    .services
-        &__card
-            &-item
-                width: 300px !important
-    .offer
-        min-height: 580px !important
-        background-size: 35vh !important
-        &__content
-            &_btn
-                .business_offline
-                    margin-left: 40px !important
-    .about_us
-        &__item
-            width: 300px !important
-    .about_us2
-        background-size: 40vh !important
-    .stages
-        &__content
-            &_text
-                img
-                    margin-top: 40px !important
-    .request
-        background-size: 35vh !important
+//     .main2
+//         min-height: 450px !important
+//     .catalog__card-item
+//         width: 450px !important
+//     .services
+//         &__card
+//             &-item
+//                 width: 300px !important
+//     .offer
+//         min-height: 580px !important
+//         background-size: 35vh !important
+//         &__content
+//             &_btn
+//                 .business_offline
+//                     margin-left: 40px !important
+//     .about_us
+//         &__item
+//             width: 300px !important
+//     .about_us2
+//         background-size: 40vh !important
+//     .stages
+//         &__content
+//             &_text
+//                 img
+//                     margin-top: 40px !important
+//     .request
+//         background-size: 35vh !important
     
-///////////////////////////////////////////////////////////////////////////
-
-@media screen and ( min-width: 1920px )
-    .main
-        background-position-y: 30px !important
-        min-height: 100% !important
-        h1
-            padding-top: 80px
-    .main2
-        h1
-            padding-top: 100px
+// ///////////////////////////////////////////////////////////////////////////
