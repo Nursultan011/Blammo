@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blammo - Веб Студия Алматы</title>
     <link rel="short icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -13,11 +14,27 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <section class="active__header">
+        <div class="active__menu active__menu-left">
+            <div class="a2">
+                <a href="#main" class="close_navbar">Главная <span>.</span> </a>
+                <a href="#services" class="close_navbar">Наши Услуги <span>.</span> </a>
+                <a href="#offer" class="close_navbar">Сравнение <span>.</span> </a>
+                <a href="#about" class="close_navbar">О нас <span>.</span> </a>
+                <a href="#stages" class="close_navbar">Упаковка бизнеса <span>.</span> </a>
+                <a href="#request" class="close_navbar mb">Обратная связь <span>.</span> </a>
+                <a href="tel:+77122521135" class="descr">+7 (712) 252 11 35</a>
+                <a href="mailto:info@far-maservice.com" class="descr"> info@far-maservice.com </a>
+            </div>
+        </div>
+    </section> 
     <header class="header">
         <div class="container">
-            <a href="" class="header__logo"> <img src="icons/blammo..svg" alt="blammo_logo"> </a>
-            <div class="humberger">
-                <span></span>
+            <div class="row">
+                <a href="" class="header__logo col-md-3"> <img src="icons/blammo..svg" alt="blammo_logo"> </a>
+                <div class="offset-md-8 hamburger">
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -28,13 +45,14 @@
             <button data-modal="consultation">Оставить заявку</button>
         </div>
     </section>
-    <section class="services" id="services">
+    <div id="services"></div>
+    <section class="services">
         <div class="container">
             <h1 class="title">Наши услуги</h1>
             <div class="services__content fadeInUp wow">
                <a href="services_pages.html" class="services__content-item bg1">
                     <div>
-                        <p class="col-md-9 p">Создание продающих сайтов</p>
+                        <p class="p">Создание <br> продающих сайтов</p>
                         <img src="icons/services_s.svg" alt="">
                     </div>
                </a>
@@ -71,7 +89,8 @@
             </div>
         </div>
     </section>
-    <section class="offer" id="offer">
+    <div id="offer"></div>
+    <section class="offer">
         <div class="container">
             <div class="row">
                 <div class="offer__text col-md-5 fadeInUp wow">
@@ -82,10 +101,10 @@
                     <div class="offer__content">
                         <div class="row">
                             <div class="d-flex">
-                                <div class=" offer__content_btn">
+                                <div class="offer__content_btn">
                                     <a href="javascript:void(0)" class="active business_online">Бизнес в online</a>
                                 </div>
-                                <div class=" offer__content_btn">
+                                <div class="offer__content_btn">
                                     <a href="javascript:void(0)" class="business_offline">Бизнес в offline</a>
                                 </div>
                             </div>
@@ -153,7 +172,8 @@
             </div>
         </div>
     </section>
-    <section class="about_us" id="about">
+    <div id="about"></div>
+    <section class="about_us">
         <div class="container">
             <h1 class="title">Кто мы?</h1>
             <div class="about_us__card fadeInUp wow">
@@ -184,70 +204,30 @@
             </div>
         </div>
     </section>
-    <section class="stages" id="stages">
+    <div id="stages"></div>
+    <section class="stages">
         <div class="container">
             <h1 class="title">Этапы упаковки вашего бизнеса</h1>
             <div class="stages__content fadeInUp wow">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-md-5 col-sm-12">
-                        <ul>
-                            <li class="active">
-                                <a href="javascript:void(0)" class="stages__content_btn" id="1">1) Маркетинговый анализ компании и выявление проблем</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="stages__content_btn" id="2">2) Выбор эффективной стратегии привлечения клиентов</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="stages__content_btn" id="3">3) Создание прототипа и дизайна сайта исходя из стратегии</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="stages__content_btn" id="4">4) Разработка сайта по дизайн-проекту</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="stages__content_btn" id="5">5) Сдача сайта клиенту</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="stages__content_btn" id="6">6) Запуск рекламной кампании</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="stages__content_btn" id="7">7) Получение первых лидов</a>
-                            </li>
-                        </ul>
+                    <div class="col-md-5 stages__content-description bg">
+                        <p>Маркетинговая анализ компании и выявление проблем</p>
+                        <p>Выбор эффективной стратегии привлечения клиентов</p>
+                        <p>Создание прототипа и дизайна <br> сайта исходя из стратегии</p>
+                        <p>Разработка сайта по дизайн-проекту</p>
+                        <p>Сдача сайта клиенту</p>
+                        <p>Запуск рекламной кампании</p>
+                        <p>Получение первых лидов</p>
                     </div>
-                    <div class="col-md-5 col-sm-12 stages__content_block">
-                        <div class="active stages__content_text" id="stage_1">
-                            <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="stages__content_text" id="stage_2">
-                            <p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="stages__content_text" id="stage_3">
-                            <p>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="stages__content_text" id="stage_4">
-                            <p>4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="stages__content_text" id="stage_5">
-                            <p>5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="stages__content_text" id="stage_6">
-                            <p>6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="stages__content_text" id="stage_7">
-                            <img src="img/stages7.svg" alt="stage">
-                            <p>7. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
+                    <div class="col-md-7 stages__content-bg"></div>
             </div>
         </div>
     </section>
     <section class="request" id="request">
         <div class="container">
             <div class="row">
-                <div class="offset-md-6 col-md-6 request__form-content">
+                <div class="col-md-5 request__form-title">Оставьте заявку, и мы обязательно свяжемся с вами!<span>.</span> </div>
+                <div class="col-md-6 offset-md-1 request__form-content">
                     <div class="request__form fadeInUp wow">
-                        <div class="request__form-title">Оставьте заявку, и мы обязательно свяжемся с вами!<span>.</span> </div>
                         <form action="#">
                             <p>Имя</p>
                             <input name="name" required placeholder="Ваше имя" type="text" class="name">
@@ -297,7 +277,6 @@
     <div class="overlay">
         <div class="modal" id="consultation">
                 <div class="modal__close">&times;</div>
-                <div class="modal__title">Оставьте заявку, и мы обязательно свяжемся с вами!<span>.</span> </div>
                 <form action="#">
                     <p>Имя</p>
                     <input name="name" required placeholder="Ваше имя" type="text" class="name">
