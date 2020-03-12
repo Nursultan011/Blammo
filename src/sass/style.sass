@@ -1,28 +1,36 @@
 *
-    box-sizing: border-box
+    -webkit-box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif
 
 @import 'media'
-@import 'services'
-@import 'modal'
+
+$main-color: #ffffff
+$second-color: #E9002C
+$bg-color: #111115
 
 body
+    background-color: $bg-color
     margin: 0
     padding: 0
 
 .title
-    color: #1b1a27
-    font-size: 27px
-    font-weight: 700
+    color: $main-color
+    font-size: 32px
+    font-weight: 800
     padding-left: 0
+    span
+        color: $second-color
+        margin-left: -5px
 
 .toggle-black
-    background: white
+    border-bottom: 1px solid $bg-color
 
 .slick
+    background-color: $bg-color
     position: fixed
     width: 100%
-    background: white
     z-index: 100
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25)
 
@@ -32,16 +40,19 @@ body
         display: none
         position: absolute
         right: 0
-        background: #1B1A27
-        width: 660px
+        width: 100%
         height: 100vh
         z-index: 1000
         position: fixed
+        background: $bg-color
+        .burger
+            background: url('../icons/BLAMMO-burger.svg') no-repeat
+            background-position: left
+            background-size: contain
         .a2
             display: flex
             flex-direction: column
             margin-top: 140px
-            margin-left: 100px
             a
                 font-weight: 800
                 font-size: 26px
@@ -82,33 +93,27 @@ body
         height: 24px
         position: relative
         z-index: 1215
+        transition: 0.5s
         span
-            border-radius: 5px
-            position: absolute
-            top: 50%
-            margin-top: -1px
-            width: 24px
-            height: 3px
-            background-color: black
             &::before, &::after
                 content: ''
                 display: block
-                border-radius: 5px
                 transition: 0.3s
                 position: absolute
                 top: 50%
-                margin-top: -1px
-                width: 24px
+                width: 30px
                 height: 3px
-                background-color: black
+                background-color: $main-color
             &::before
                 transform: translateY(-7px)
             &::after
+                margin-top: -2px
                 transform: translateY(7px)
+                width: 24px
+                height: 3.5px
         &_active
             span
                 position: fixed
-                height: 0
                 top: 43px
                 &::before
                     transform: rotate(45deg)
@@ -116,197 +121,138 @@ body
                 &::after
                     transform: rotate(-45deg)
                     background-color: white
+                    width: 30px
+                    margin-top: 0
 
 .main
-    background: url('../img/main_bg.svg') center (center / cover) no-repeat
-    min-height: 80vh
-    background-size: cover
-    padding: 288px 0
-    h1
-        color: #ffffff
-        font-size: 38px
-        font-weight: 800
-        padding-left: 0
-    h2
-        margin-top: 25px
-        padding-left: 0
-        color: #ffffff
-        font-size: 16px
-        font-weight: 500
-    button
-        margin-top: 25px
-        color: #ffffff
-        font-size: 16px
-        font-weight: 400
-        padding: 16px 30px 16px 30px
-        border-radius: 10px
-        background-color: #325cfd
-        text-align: center
-        border: none
-        cursor: pointer
+    background: url('../img/main_bg.svg') 
+    background-repeat: no-repeat
+    background-position: right
+    height: 100vh
+    &__content
+        padding: 25vh 0
+        h1
+            color: $main-color
+            font-size: 60px
+            font-weight: 800
+            padding-left: 0
+            span
+                color: $second-color
+                margin-left: -20px
+        h2
+            margin-top: 40px
+            padding-left: 0
+            color: $main-color
+            font-size: 16px
+            font-weight: 500
+        button
+            margin-top: 40px
+            color: #ffffff
+            font-size: 16px
+            font-weight: 500
+            padding: 16px 40px 16px 40px
+            background-color: $bg-color
+            text-align: center
+            border: 2px solid $main-color
+            cursor: pointer
+            overflow: hidden
+            position: relative
+            span
+                transition: color .3s linear
+            &:hover
+                span
+                    position: relative
+                    color: $bg-color
+                    z-index: 5
+                &::before
+                    transform: skewY(9.3deg) scaleY(2)
+            &::before
+                position: absolute;
+                height: 100%;
+                width: 101%;
+                bottom: -50%;
+                left: 0;
+                z-index: 1;
+                background-color: $main-color;
+                -webkit-transform: skewY(9.3deg) scaleY(0);
+                -webkit-transform-origin: bottom center;
+                transform-origin: bottom center;
+                -webkit-transition: -webkit-transform .45s cubic-bezier(.48,0,.12,1);
+                transition: -webkit-transform .45s cubic-bezier(.48,0,.12,1);
+                transition: transform .45s cubic-bezier(.48,0,.12,1);
+                transition: transform .45s cubic-bezier(.48,0,.12,1),-webkit-transform .45s cubic-bezier(.48,0,.12,1);
+                content: "";
 
+                
 
-.services
+.stages
     margin-top: 250px
     .title
-        margin-bottom: 60px
+        margin-bottom: 80px
     &__content
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-        &-item
-            text-decoration: none
-            margin-bottom: 30px
-            border-radius: 10px
-            width: 350px
-            height: 360px  
-            &:hover
-                text-decoration: none 
-            div
-                display: flex
-                align-items: flex-end
-                justify-content: space-between
-                margin-right: 15px
-                p
-                    margin-top: 312px
-                    padding-left: 16px
-                    font-size: 20px
-                    font-weight: 700
-                    color: #ffffff
-                .p
-                    margin-top: 284px
-                img
-                    margin-bottom: 15px
-                    
-
-
-
-        .bg1
-            background: linear-gradient(180deg, rgba(27, 26, 39, 0) 20.31%, rgba(27, 26, 39, 0.6) 100%), url('../img/site__bg.jpg') no-repeat
-            background-size: cover
-        .bg2
-            background: linear-gradient(180deg, rgba(27, 26, 39, 0) 20.31%, rgba(27, 26, 39, 0.6) 100%), url('../img/design__bg.jpg') no-repeat
-            background-size: cover
-        .bg3
-            background: linear-gradient(180deg, rgba(27, 26, 39, 0) 20.31%, rgba(27, 26, 39, 0.6) 100%), url('../img/context__bg.jpg') no-repeat
-            background-size: cover
-            background-position-x: -170px
-        .bg4
-            background: linear-gradient(180deg, rgba(27, 26, 39, 0) 20.31%, rgba(27, 26, 39, 0.6) 100%), url('../img/target__bg.jpg') no-repeat
-            background-size: cover
-        .bg5
-            background: linear-gradient(180deg, rgba(27, 26, 39, 0) 20.31%, rgba(27, 26, 39, 0.6) 100%), url('../img/seo__bg.jpg') no-repeat
-            background-size: cover
-            background-position-x: -100px
-        .bg6
-            background: linear-gradient(180deg, rgba(27, 26, 39, 0) 20.31%, rgba(27, 26, 39, 0.6) 100%), url('../img/teh__bg.jpg') no-repeat
-            background-size: cover
-            
-
-
-.offer
-    margin-top: 250px
-    &__text
-        margin-top: 70px
-        background: url('../img/offer_bg.svg') no-repeat
-        padding: 50px 70px 0 35px
-        &-title
-            color: #ffffff
-            font-size: 27px
-            font-weight: 700
-        &-subtitle
-            margin-top: 25px
-            color: #ffffff
-            font-size: 18px
-            font-weight: 400
-            line-height: 24.91px
-    &__content
-        &_btn
-            margin-bottom: .5em
-            .business_offline
-                margin-left: 49px
-            a
-                background: none
-                border: none
-                color: #1B1A27
-                padding: 0
-                font-weight: 700
-                text-decoration: none
+        ul
+            list-style-type: none
+            padding: 0
+            li
+                margin-bottom: 60px
+                &:nth-last-child(1)
+                    margin-bottom: 0
+                -webkit-transition: all .1s ease
+                -moz-transition: all .1s ease
+                -ms-transition: all .1s ease
+                -o-transition: all .1s ease
                 transition: all .1s ease
                 &.active
-                    color: #325CFD
-                    border-bottom: 2px solid #325CFD
+                    background: url('../icons/arrow.svg') no-repeat
+                    background-position: left center
+                    padding-left: 25px                     
+                a
+                    outline: none
+                    text-decoration: none
+                    color: $main-color
+                    font-weight: 700
+                    font-size: 20px
+        #stage_5
+            img
+                width: 80%
         &_text
-            margin-top: 28px
-            ul
-                padding-left: 0
-                display: none
-                transition: all .1s ease
-            ul.active
+            display: none
+            img
+                margin: 0 auto
+                margin-top: 60px
+            p
+                font-size: 16px
+                color: $main-color
+                font-weight: 500
+                margin-top: 60px
+        .active
+            display: block
+            img
                 display: block
-                transition: all .1s ease
-                div
-                    margin-bottom: 24px
-                li
-                    list-style-type: none
-                    padding-left: 15px
-            ul.ul_offline
-                li
-                    padding-top: 5px
+                text-align: center       
 
 .about_us
     margin-top: 250px
-    &__card
-        margin-top: 50px
+    .title
+        margin-bottom: 80px
+    &__item
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-    &__item
-        width: 350px
-        height: 220px
-        background-color: #ffffff
-        h1
-            color: #325cfd
-            font-size: 58px
-            font-weight: 800
-            text-align: center
-            padding-top: 40px
-            span
-                color: #e9002c
-                font-weight: 700
-        p
-            color: #1b1a27
-            font-size: 18px
-            font-weight: 600
-            text-align: center
-            padding: 0 73px
-
-.about_us2
-    margin-top: 90px
-    &__content
-        display: flex
-        flex-wrap: wrap 
+        margin-bottom: 122px
         &-description
-            margin: 112px 0px 
-            padding-left: 0
-            padding-right: 30px
+            color: $main-color
             h1
-                color: #1b1a27
-                font-size: 20px
-                font-weight: 700
-                padding-bottom: 25px
+                font-weight: 800
+                font-size: 58px
             p
-                color: #1b1a27
-                font-size: 16px
-                font-weight: 400
-        &-bg
-            background: url('../img/about_us2-img.svg') no-repeat
-            background-size: cover
-            border-radius: 10px
-            
-        
-
-.stages
+                font-weight: 600
+                font-size: 18px
+        &-img
+            img
+                width: 100%
+      
+.stage
     margin-top: 250px
     .title
         margin-bottom: 80px
@@ -315,29 +261,59 @@ body
         flex-wrap: wrap
         justify-content: space-between
         &-description
-            background: url('../icons/stages_line.svg') no-repeat
+            background: url('../icons/stage_line.svg') no-repeat
             background-position-y: 20px
             background-position-x: 15px
             background-size: auto
             font-weight: 600
             font-size: 18px
+            color: $main-color
             p
-                margin-bottom: 8%
+                padding-bottom: 6%
                 padding-left: 45px
                 &:nth-child(2)
-                    margin-bottom: 9%
+                    padding-bottom: 5%
                 &:nth-child(3)
-                    margin-bottom: 12%
+                    padding-bottom: 6.5%
                 &:nth-child(4)
-                    margin-bottom: 14%
+                    padding-bottom: 10.5%
                 &:nth-child(5)
-                    margin-bottom: 15%
+                    padding-bottom: 10.5%
                 &:nth-child(6)
-                    margin-bottom: 14%
+                    padding-bottom: 10.5%
+            .p1
+                background: url('../icons/stage-number1.svg') no-repeat
+                background-position-x: 30px
+                background-position-y: 30px
+            .p2
+                background: url('../icons/stage-number2.svg') no-repeat
+                background-position-x: 30px
+                background-position-y: 30px
+            .p3
+                background: url('../icons/stage-number3.svg') no-repeat
+                background-position-x: 30px
+                background-position-y: 30px
+            .p4
+                background: url('../icons/stage-number4.svg') no-repeat
+                background-position-x: 30px
+                background-position-y: 15px
+            .p5
+                background: url('../icons/stage-number5.svg') no-repeat
+                background-position-x: 30px
+                background-position-y: 15px
+            .p6
+                background: url('../icons/stage-number6.svg') no-repeat
+                background-position-x: 30px
+                background-position-y: 15px
+            .p7
+                background: url('../icons/stage-number7.svg') no-repeat
+                background-position-x: 30px
+                background-position-y: 15px
+            
         &-bg
-            background: url('../img/stages_bg.svg') no-repeat
+            background: url('../img/stage_bg.png') no-repeat
             background-size: contain
-            margin-top: 100px
+            margin: 30px 0
             
                     
                     
@@ -346,18 +322,13 @@ body
 
 .request
     margin-top: 250px
-    padding: 120px 0
-    background: url('../img/request_bg.svg') no-repeat
-    background-size: cover
+    padding: 250px 0
+    background: $main-color
     &__form
-        background-color: #ffffff
-        padding: 30px
-        border-radius: 10px
         &-title
-            margin-top: 244px
-            color: #ffffff
-            font-size: 30px
-            font-weight: 700
+            color: $bg-color
+            font-size: 32px
+            font-weight: 800
             span
                 color: #e9002c
         form
@@ -365,49 +336,63 @@ body
                 &:nth-child(1)
                     margin: 0
                 margin: 25px 0 0 0
-            input, textarea
+            input
                 width: 100%
-                border-radius: 10px
                 border: none
-                background-color: #f5f5f5
-                padding: 10px 20px 10px 20px
-                margin-top: 5px
-            textarea
-                padding-bottom: 80px
+                background-color: $main-color
+                border-bottom: 1px solid #BABABA
+                padding: 10px 20px 10px 5px
+                margin-bottom: 30px
+                outline: none
+                transition: 0.4s
+                &::placeholder
+                    color: $bg-color
+                    font-weight: 500
+            .name, .email, .phone
+                &:hover
+                    border-bottom: 1px solid $bg-color
+            div
+                display: flex
+                justify-content: space-between
+            input[name=phone]
+                width: 47%
+            input[name=email]
+                width: 47%
         &_btn
             margin-top: 20px
             display: flex
-            justify-content: flex-end
             input[type=submit]
-                color: #ffffff
+                color: $bg-color
                 font-size: 16px
-                font-weight: 400
-                padding: 16px 30px 16px 30px
+                font-weight: 500
+                padding: 16px 40px 16px 40px
+                background-color: $main-color
+                text-align: center
+                border: 2px solid $bg-color
+                cursor: pointer
                 width: 45%
-                border-radius: 10px
-                background-color: #325cfd
-                border: none
 
 
 .footer
     padding-top: 200px
-    background-color: #1B1A27
+    background-color: $bg-color
     padding-bottom: 180px
     &__1
         p
             padding-top: 30px
-            color: #ffffff
+            color: $main-color
             font-size: 16px
             font-weight: 500
     &__2
         p
-            color: #ffffff
+            color: $main-color
             font-size: 16px
             font-weight: 700
             text-transform: uppercase
             margin-bottom: 30px
         a
-            color: #ffffff
+            outline: none
+            color: $main-color
             font-size: 15px
             font-weight: 400
             padding-bottom: 20px
@@ -417,7 +402,7 @@ body
             display: flex
             flex-direction: column
     &__3
-        color: #ffffff
+        color: $main-color
         font-size: 15px
         font-weight: 400
         &-title
@@ -427,17 +412,17 @@ body
             margin-bottom: 30px
         &-email
             font-size: 15px
-            color: #ffffff
+            color: $main-color
             &:hover
                 text-decoration: none
-                color: #ffffff
+                color: $main-color
         &-phone
             padding-top: 20px
             font-size: 15px
-            color: #ffffff
+            color: $main-color
             &:hover
                 text-decoration: none
-                color: #ffffff
+                color: $main-color
         div
             display: flex
             flex-direction: column

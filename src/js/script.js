@@ -2,13 +2,13 @@ $(document).ready(function(){
 
     new WOW().init();
 
-    $(".offer__content .offer__content_btn a").click(function(e) {
+    $(".stages__content li").click(function(e) {
         e.preventDefault();
-        const btnClassName = this.className;
-        $(".offer__content .offer__content_btn a").removeClass('active');
+        $('.stages__content li').removeClass('active');
         $(this).addClass('active');
-        $(".offer__content_text ul").removeClass('active');
-        $("."+ btnClassName +" ul").addClass('active');
+        var stage_id = $('.stages__content li.active a').attr('id');
+        $('.stages__content_text').removeClass('active');
+        $('#stage_' + stage_id).addClass('active');
     });
 
     $('.close_navbar').on('click', function(){
@@ -36,22 +36,16 @@ $(document).ready(function(){
         }
     });
 
-    $('[data-modal=consultation]').on('click', function() {
-        $('.overlay, #consultation').fadeIn('slow');
-    });
-    $('.modal__close').on('click', function() {
-        $('.overlay, #consultation').fadeOut('slow')
-    });
     $('input[name=phone').mask("+7 (999) 999-99-99");
 
 });
 
 $(window).scroll(function(){
     var elemScrollTop = $(window).scrollTop();
-    var blockHeight = $('.header').height() + $('.main, .main2').height();
+    var blockHeight = $('.header').height() + $('.main').height();
 
     if (! $('.active__menu').is(':visible')) {
-        if (elemScrollTop >= (blockHeight / 2) ) {
+        if (elemScrollTop >= (blockHeight / 1) ) {
             $('.header').addClass('slick');
         } else {
             $('.header').removeClass('slick');
