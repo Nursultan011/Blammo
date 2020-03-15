@@ -15,11 +15,6 @@ $(document).ready(function(){
         $('.active__menu').fadeOut();
     });
 
-    // $('.hamburger').click(function (e) {
-    //     e.preventDefault();
-    //     $('.hamburger span').toggleClass('toggle-black');
-    // });
-
     $('.hamburger').on('click', function(e) {
         e.preventDefault;
         $(this).toggleClass('hamburger_active');

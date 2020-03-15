@@ -35,12 +35,6 @@ body
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25)
     transition: 0.5s
 
-.slick_active
-    background: none
-    box-shadow: none
-    img
-        display: none
-
 .active__header
     position: relative
     .active__menu
@@ -52,14 +46,13 @@ body
         z-index: 1000
         position: fixed
         background: $bg-color
-        .burger
+        .a2
             background: url('../icons/BLAMMO-burger.svg') no-repeat
             background-position: left
             background-size: contain
-        .a2
             display: flex
             flex-direction: column
-            margin-top: 140px
+            margin: 20vh 0
             a
                 font-weight: 800
                 font-size: 26px
@@ -70,7 +63,7 @@ body
                     transition: 0.6s
                     padding: 0
                     margin: -8px
-                    color: #1B1A27
+                    color: $bg-color
                 &:hover
                     text-decoration: none
                     color: #ffffff
@@ -91,7 +84,6 @@ body
     transition: 1s ease-out
     img
         display: block
-    
     .hamburger
         cursor: pointer
         display: block
@@ -99,22 +91,41 @@ body
         height: 24px
         position: relative
         z-index: 1215
-        transition: 0.5s
+        -webkit-transition: all .5s ease
+        -moz-transition: all .5s ease
+        -ms-transition: all .5s ease
+        -o-transition: all .5s ease
+        transition: all .5s ease
         top: 10px
         span
+            display: block
+            transition: 0.3s
+            position: absolute
+            width: 0px
+            height: 0px
+            background-color: $main-color
             &::before, &::after
                 content: ''
                 display: block
                 transition: 0.3s
                 position: absolute
-                // top: 50%
                 width: 30px
                 height: 2px
                 background-color: $main-color
             &::before
+                -moz-transform: translateY(-7px)
+                -ms-transform: translateY(-7px)
+                -o-transform: translateY(-7px)
+                -webkit-transform: translateY(-7px)
                 transform: translateY(-7px)
             &::after
-                transform: translateY(4px)
+                margin-top: 4px
+                -moz-transform: translateY(0px)
+                -ms-transform: translateY(0px)
+                -o-transform: translateY(0px)
+                -webkit-transform: translateY(0px)
+                transform: translateY(0px)
+                transform: translateX(6px)
                 width: 24px
                 height: 2px
         &_active
@@ -122,12 +133,20 @@ body
                 position: fixed
                 top: 43px
                 &::before
+                    -moz-transform: rotate(45deg)
+                    -ms-transform: rotate(45deg)
+                    -o-transform: rotate(45deg)
+                    -webkit-transform: rotate(45deg)
                     transform: rotate(45deg)
-                    background-color: white
+                    height: 2px
                 &::after
+                    -moz-transform: rotate(-45deg)
+                    -ms-transform: rotate(-45deg)
+                    -o-transform: rotate(-45deg)
+                    -webkit-transform: rotate(-45deg)
                     transform: rotate(-45deg)
-                    background-color: white
                     width: 30px
+                    height: 2px
                     margin-top: 0
 
 .main
@@ -200,32 +219,56 @@ body
             list-style-type: none
             padding: 0
             li
+                img
+                    display: none
                 margin-bottom: 60px
                 &:nth-last-child(1)
                     margin-bottom: 0
-                -webkit-transition: all .3s ease
-                -moz-transition: all .3s ease
-                -ms-transition: all .3s ease
-                -o-transition: all .3s ease
-                transition: all .3s ease
+                    -webkit-transition: all .3s ease
+                    -moz-transition: all .3s ease
+                    -ms-transition: all .3s ease
+                    -o-transition: all .3s ease
+                    transition: all .3s ease
                 &.active
-                    background: url('../icons/arrow.svg') no-repeat
-                    background-position: left center
-                    padding-left: 25px                     
+                    .stages__content_btn
+                        background: url('../icons/arrow.svg') no-repeat
+                        background-position: left center
+                        padding-left: 25px 
+                        transition: 0.3s     
+                    img 
+                        display: block             
                 a
                     outline: none
                     text-decoration: none
                     color: $main-color
                     font-weight: 700
                     font-size: 20px
+                #stage_1-mobile, #stage_2-mobile, #stage_3-mobile, #stage_4-mobile, #stage_5-mobile, #stage_6-mobile
+                    display: none
+        #stage_1
+            img
+                width: 80%
+        #stage_2
+            img
+                width: 80%
+        #stage_3
+            img
+                width: 80%
+        #stage_4
+            img
+                width: 80%
         #stage_5
             img
                 width: 80%
+        #stage_6
+            img
+                width: 100%
         &_text
             display: none
             img
                 margin: 0 auto
-                margin-top: 60px
+                margin-top: 40px
+                height: 35vh
             p
                 font-size: 16px
                 color: $main-color
@@ -255,6 +298,7 @@ body
                 font-weight: 600
                 font-size: 18px
         &-img
+            padding: 0
             img
                 width: 100%
       

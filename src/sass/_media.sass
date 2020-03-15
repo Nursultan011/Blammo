@@ -2,14 +2,17 @@
     .active__header
         .active__menu
             width: 100% !important
-            .burger
-                background: none !important
+            padding: 0 15px !important
+            img
+                padding-top: 20px !important
             .a2
-                padding-top: 130px !important
+                background: none !important
                 margin-top: 0 !important
-                margin-left: 15px !important
+                padding-top: 130px !important
                 a
                     margin-bottom: 40px !important
+                .descr
+                    display: none !important
 
     .slick
         z-index: 1215 !important
@@ -18,7 +21,7 @@
         background: none !important
         box-shadow: none !important
         img
-            display: block !important
+            display: none !important
 
     .header
         padding: 20px 0 !important
@@ -26,14 +29,15 @@
             margin-right: 15px !important
             &_active
                 span
-                    top: 33px !important
+                    top: 30px !important
+          
         .row
             flex-wrap: inherit !important
 
     .main 
         background: none !important
         &__content
-            padding-top: 134px !important
+            padding: 15vh 0 !important
             padding-bottom: 0 !important
         h1
             font-size: 46px !important
@@ -47,6 +51,16 @@
             &_text
                 img
                     width: 100% !important
+            ul
+                li
+                    a
+                        font-size: 18px !important
+                    &.active
+                        transition: 0.5s
+                        #stage_1-mobile, #stage_2-mobile, #stage_3-mobile, #stage_4-mobile, #stage_5-mobile, #stage_6-mobile
+                            display: block !important
+            &_block
+                display: none !important
 
     .about_us
         &__item
@@ -107,6 +121,31 @@
 // ///////////////////////////////////////////////////////////////////////////
    
 @media screen and ( max-width: 365px )
+    .active__header
+        .active__menu
+            .a2
+                padding: 20vh 0 !important
+                .descr
+                    display: none !important
+
+    .stage
+        &__content
+            &-description
+                font-size: 12px !important
+                p
+                    padding-bottom: 45px !important
+                    padding-left: 45px
+                    &:nth-child(2)
+                        padding-bottom: 15% !important
+                    &:nth-child(3)
+                        padding-bottom: 15% !important
+                    &:nth-child(4)
+                        padding-bottom: 19% !important
+                    &:nth-child(5)
+                        padding-bottom: 21% !important
+                    &:nth-child(6)
+                        padding-bottom: 22% !important
+
     .main
         &__content
             padding-top: 50px !important
@@ -131,33 +170,33 @@
 
     .active__header
         .active__menu
-            .burger
+            .a2
                 background-size: 50% !important
     .stages
         &__content
             &_text
                 img
-                    width: 80% !important
+                    height: 25vh !important
 
     .stage
         &__content
-            flex-direction: column !important
             &-description
-                background-size: 6.5% !important
-                background-position-y: 70px !important
+                font-size: 14px !important
                 p
-                margin-bottom: 0% !important
-                padding-left: 45px
-                &:nth-child(2)
-                    margin-bottom: 0px !important
-                &:nth-child(3)
-                    margin-bottom: 0% !important
-                &:nth-child(4)
-                    margin-bottom: 14%
-                &:nth-child(5)
-                    margin-bottom: 15%
-                &:nth-child(6)
-                    margin-bottom: 14%
+                    padding-bottom: 10px !important
+                    padding-left: 45px
+                    &:nth-child(2)
+                        padding-bottom: 5% !important
+                    &:nth-child(3)
+                        padding-bottom: 6.5% !important
+                    &:nth-child(4)
+                        padding-bottom: 16% !important
+                    &:nth-child(5)
+                        padding-bottom: 17% !important
+                    &:nth-child(6)
+                        padding-bottom: 17% !important
+                .p7
+                    padding-bottom: 50px !important
 
     .request
         &__form
@@ -176,8 +215,20 @@
 // ///////////////////////////////////////////////////////////////////////////
 
 @media (min-width: 992px) and (max-width: 1199px)
+    .active__header
+        .active__menu
+            .a2
+                background-size: 50% !important
+
     .main
         background-size: contain !important
+    
+
+    .stages
+        &__content
+            &_text
+                img
+                    height: 20vh !important
 
     .request
         &__form
@@ -185,6 +236,34 @@
                 input[type=submit]
                     width: 50% !important
             
+    .stage
+        &__content
+            &-description
+                background-position-y: 30px !important
+                font-size: 18px !important
+                p
+                    padding-bottom: 10px !important
+                    padding-left: 45px
+                    &:nth-child(2)
+                        padding-bottom: 5% !important
+                    &:nth-child(3)
+                        padding-bottom: 6.5% !important
+                    &:nth-child(4)
+                        padding-bottom: 8% !important
+                    &:nth-child(5)
+                        padding-bottom: 13% !important
+                    &:nth-child(6)
+                        padding-bottom: 13% !important
+                .p7
+                    padding-bottom: 40px !important    
+                
+                        
 
-        
-            
+
+@media screen and ( min-width: 768px )
+    .slick_active
+        background: none !important
+        box-shadow: none !important
+        img
+            display: none !important 
+    
