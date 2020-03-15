@@ -40,10 +40,10 @@
             </div>
         </header>
         <div class="container">
-            <div class="main__content">
+            <div class="main__content a1">
                 <h1 class="col-md-9">Ведущая web-студия <span>.</span> </h1>
                 <h2 class="col-md-4">Оставьте заявку и получите бесплатную консультацию с аудитом вашего бизнеса</h2>
-                <button> <span>Оставить заявку</span> </button>
+                <a href="#request"> <button> <span>Оставить заявку</span> </button> </a>
             </div>
         </div>
     </section>
@@ -160,14 +160,14 @@
                 <div class="col-md-6 offset-md-1 request__form-content">
                     <div class="request__form fadeInUp wow">
                         <form action="#">
-                            <input name="name" required placeholder="Имя" type="text" class="name">
+                            <input name="name" required placeholder="Имя" type="text" class="name toggle">
                             <div>
-                            <input name="phone" required placeholder="Номер телефона" type="text" class="phone">
-                            <input name="email" required placeholder="E-mail" type="email" class="email">  
+                            <input name="phone" required placeholder="Номер телефона" type="text" class="phone toggle">
+                            <input name="email" required placeholder="E-mail" type="email" class="email toggle">  
                             </div>                  
-                            <input name="area" cols=”25” rows=”1” wrap=”on” required placeholder="Ваш вопрос" class="comment"></input>
+                            <input name="area" cols=”25” rows=”1” wrap=”on” required placeholder="Ваш вопрос" class="comment toggle"></input>
                             <div class="request__form_btn">
-                                <input type="submit" value="Оставить заявку">
+                                <button> <span>Оставить заявку</span> </button>
                             </div>
                         </form>
                     </div>
@@ -202,7 +202,6 @@
             </div>
         </div>
     </section>
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/wow.min.js"></script>

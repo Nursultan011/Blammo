@@ -24,15 +24,22 @@ body
         color: $second-color
         margin-left: -5px
 
-.toggle-black
+.toggle_active
     border-bottom: 1px solid $bg-color
 
 .slick
     background-color: $bg-color
     position: fixed
     width: 100%
-    z-index: 100
+    z-index: 1000
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25)
+    transition: 0.5s
+
+.slick_active
+    background: none
+    box-shadow: none
+    img
+        display: none
 
 .active__header
     position: relative
@@ -81,12 +88,11 @@ body
     padding: 30px 0
     display: flex 
     justify-content: space-between
-    transition: 0.3s ease-out
+    transition: 1s ease-out
     img
         display: block
     
     .hamburger
-        top: -2px
         cursor: pointer
         display: block
         width: 24px
@@ -94,23 +100,23 @@ body
         position: relative
         z-index: 1215
         transition: 0.5s
+        top: 10px
         span
             &::before, &::after
                 content: ''
                 display: block
                 transition: 0.3s
                 position: absolute
-                top: 50%
+                // top: 50%
                 width: 30px
-                height: 3px
+                height: 2px
                 background-color: $main-color
             &::before
                 transform: translateY(-7px)
             &::after
-                margin-top: -2px
-                transform: translateY(7px)
+                transform: translateY(4px)
                 width: 24px
-                height: 3.5px
+                height: 2px
         &_active
             span
                 position: fixed
@@ -197,11 +203,11 @@ body
                 margin-bottom: 60px
                 &:nth-last-child(1)
                     margin-bottom: 0
-                -webkit-transition: all .1s ease
-                -moz-transition: all .1s ease
-                -ms-transition: all .1s ease
-                -o-transition: all .1s ease
-                transition: all .1s ease
+                -webkit-transition: all .3s ease
+                -moz-transition: all .3s ease
+                -ms-transition: all .3s ease
+                -o-transition: all .3s ease
+                transition: all .3s ease
                 &.active
                     background: url('../icons/arrow.svg') no-repeat
                     background-position: left center
@@ -348,7 +354,6 @@ body
                 &::placeholder
                     color: $bg-color
                     font-weight: 500
-            .name, .email, .phone
                 &:hover
                     border-bottom: 1px solid $bg-color
             div
@@ -360,18 +365,42 @@ body
                 width: 47%
         &_btn
             margin-top: 20px
-            display: flex
-            input[type=submit]
+            button
                 color: $bg-color
                 font-size: 16px
                 font-weight: 500
-                padding: 16px 40px 16px 40px
+                padding: 16px 50px 16px 50px
                 background-color: $main-color
                 text-align: center
                 border: 2px solid $bg-color
                 cursor: pointer
-                width: 45%
-
+                overflow: hidden
+                position: relative
+                span
+                    transition: color .3s linear
+                &:hover
+                    span
+                        position: relative
+                        color: $main-color
+                        z-index: 5
+                    &::before
+                        transform: skewY(9.3deg) scaleY(2)
+                &::before
+                    position: absolute;
+                    height: 100%;
+                    width: 101%;
+                    bottom: -50%;
+                    left: 0;
+                    z-index: 1;
+                    background-color: $bg-color;
+                    -webkit-transform: skewY(9.3deg) scaleY(0);
+                    -webkit-transform-origin: bottom center;
+                    transform-origin: bottom center;
+                    -webkit-transition: -webkit-transform .45s cubic-bezier(.48,0,.12,1);
+                    transition: -webkit-transform .45s cubic-bezier(.48,0,.12,1);
+                    transition: transform .45s cubic-bezier(.48,0,.12,1);
+                    transition: transform .45s cubic-bezier(.48,0,.12,1),-webkit-transform .45s cubic-bezier(.48,0,.12,1);
+                    content: "";
 
 .footer
     padding-top: 200px
